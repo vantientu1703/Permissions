@@ -19,6 +19,13 @@ class ViewController: UIViewController {
         facade.requestNotifications(hasRemoteNotification: true) { (granted) in
             print("granted notifications")
         }
+        
+//        print("hasBiometrics ", BiometricIDAuth().hasBiometrics)
+//        print("availabelFaceId ", BiometricIDAuth().availabelFaceId)
+//        print("availabelTouchId ", BiometricIDAuth().availabelTouchId)
+//        BiometricIDAuth().requestPermission { (granted) in
+//            print("granted ", granted)
+//        }
     }
 }
 
