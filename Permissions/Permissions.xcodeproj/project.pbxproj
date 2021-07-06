@@ -16,6 +16,14 @@
 		EFDB8757268589B40064ACE4 /* PermissionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB8756268589B40064ACE4 /* PermissionsUITests.swift */; };
 		EFDB8766268589E10064ACE4 /* NotificationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB8765268589E10064ACE4 /* NotificationPermission.swift */; };
 		EFDB876B26859A7D0064ACE4 /* PhotoLibraryPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB876A26859A7D0064ACE4 /* PhotoLibraryPermission.swift */; };
+		EFF6AF8A268EBEA4008802F2 /* BiometricAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6AF89268EBEA4008802F2 /* BiometricAuthenticator.swift */; };
+		EFF6AF92268EE604008802F2 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6AF91268EE604008802F2 /* NSObject+Ext.swift */; };
+		EFF6AF94268EE61E008802F2 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6AF93268EE61E008802F2 /* UIViewController+Ext.swift */; };
+		EFF6AF96268EE62F008802F2 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6AF95268EE62F008802F2 /* UIStoryboard+Ext.swift */; };
+		EFF6AF9A268EE83F008802F2 /* UITabelView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6AF97268EE83E008802F2 /* UITabelView+Ext.swift */; };
+		EFF6AF9B268EE83F008802F2 /* UITableViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6AF98268EE83F008802F2 /* UITableViewCell+Ext.swift */; };
+		EFF6AF9C268EE83F008802F2 /* UITableViewHeaderFooterView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6AF99268EE83F008802F2 /* UITableViewHeaderFooterView+Ext.swift */; };
+		EFF6AF9F268EECA5008802F2 /* BiometricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6AF9E268EECA5008802F2 /* BiometricViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		EFDB8758268589B40064ACE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFDB8765268589E10064ACE4 /* NotificationPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationPermission.swift; sourceTree = "<group>"; };
 		EFDB876A26859A7D0064ACE4 /* PhotoLibraryPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPermission.swift; sourceTree = "<group>"; };
+		EFF6AF89268EBEA4008802F2 /* BiometricAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticator.swift; sourceTree = "<group>"; };
+		EFF6AF91268EE604008802F2 /* NSObject+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
+		EFF6AF93268EE61E008802F2 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		EFF6AF95268EE62F008802F2 /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
+		EFF6AF97268EE83E008802F2 /* UITabelView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabelView+Ext.swift"; sourceTree = "<group>"; };
+		EFF6AF98268EE83F008802F2 /* UITableViewCell+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ext.swift"; sourceTree = "<group>"; };
+		EFF6AF99268EE83F008802F2 /* UITableViewHeaderFooterView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Ext.swift"; sourceTree = "<group>"; };
+		EFF6AF9E268EECA5008802F2 /* BiometricViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +117,11 @@
 		EFDB8733268589AF0064ACE4 /* Permissions */ = {
 			isa = PBXGroup;
 			children = (
-				EFDB8769268597720064ACE4 /* PhotoLibrary */,
-				EFDB8764268589E10064ACE4 /* Notification */,
+				EFF6AF90268EE5F6008802F2 /* Extensions */,
+				EFF6AF7D268C7A31008802F2 /* Sources */,
 				EFDB8734268589AF0064ACE4 /* AppDelegate.swift */,
 				EFDB8738268589AF0064ACE4 /* ViewController.swift */,
+				EFF6AF9E268EECA5008802F2 /* BiometricViewController.swift */,
 				EFDB873A268589AF0064ACE4 /* Main.storyboard */,
 				EFDB873D268589B40064ACE4 /* Assets.xcassets */,
 				EFDB873F268589B40064ACE4 /* LaunchScreen.storyboard */,
@@ -136,8 +153,7 @@
 			children = (
 				EFDB8765268589E10064ACE4 /* NotificationPermission.swift */,
 			);
-			name = Notification;
-			path = ../../NotificationFacade/NotificationFacade/Notification;
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		EFDB8769268597720064ACE4 /* PhotoLibrary */ = {
@@ -146,6 +162,37 @@
 				EFDB876A26859A7D0064ACE4 /* PhotoLibraryPermission.swift */,
 			);
 			path = PhotoLibrary;
+			sourceTree = "<group>";
+		};
+		EFF6AF7D268C7A31008802F2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EFF6AF88268EBD74008802F2 /* Biometric */,
+				EFDB8769268597720064ACE4 /* PhotoLibrary */,
+				EFDB8764268589E10064ACE4 /* Notification */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EFF6AF88268EBD74008802F2 /* Biometric */ = {
+			isa = PBXGroup;
+			children = (
+				EFF6AF89268EBEA4008802F2 /* BiometricAuthenticator.swift */,
+			);
+			path = Biometric;
+			sourceTree = "<group>";
+		};
+		EFF6AF90268EE5F6008802F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFF6AF91268EE604008802F2 /* NSObject+Ext.swift */,
+				EFF6AF93268EE61E008802F2 /* UIViewController+Ext.swift */,
+				EFF6AF95268EE62F008802F2 /* UIStoryboard+Ext.swift */,
+				EFF6AF97268EE83E008802F2 /* UITabelView+Ext.swift */,
+				EFF6AF98268EE83F008802F2 /* UITableViewCell+Ext.swift */,
+				EFF6AF99268EE83F008802F2 /* UITableViewHeaderFooterView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +326,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFDB8739268589AF0064ACE4 /* ViewController.swift in Sources */,
+				EFF6AF9C268EE83F008802F2 /* UITableViewHeaderFooterView+Ext.swift in Sources */,
 				EFDB8735268589AF0064ACE4 /* AppDelegate.swift in Sources */,
+				EFF6AF94268EE61E008802F2 /* UIViewController+Ext.swift in Sources */,
 				EFDB8766268589E10064ACE4 /* NotificationPermission.swift in Sources */,
+				EFF6AF96268EE62F008802F2 /* UIStoryboard+Ext.swift in Sources */,
+				EFF6AF9B268EE83F008802F2 /* UITableViewCell+Ext.swift in Sources */,
 				EFDB876B26859A7D0064ACE4 /* PhotoLibraryPermission.swift in Sources */,
+				EFF6AF8A268EBEA4008802F2 /* BiometricAuthenticator.swift in Sources */,
+				EFF6AF9F268EECA5008802F2 /* BiometricViewController.swift in Sources */,
+				EFF6AF92268EE604008802F2 /* NSObject+Ext.swift in Sources */,
+				EFF6AF9A268EE83F008802F2 /* UITabelView+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

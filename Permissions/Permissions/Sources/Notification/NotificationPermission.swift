@@ -22,13 +22,13 @@ class NotificationPermission {
             case .authorized:
                 completion?(true)
             case .denied:
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.11, execute: {
                     if hasAlertIfPermissionDenied {
-                        self.presentAlertSettings(from: viewController, completion: completion)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.11, execute: {
+                            self.presentAlertSettings(from: viewController, completion: completion)
+                        })
                     } else {
                         completion?(false)
                     }
-                })
             default:
                 self.requestPermission(hasRemoteNotification: hasRemoteNotification) { (granted) in
                     completion?(granted)
@@ -52,7 +52,9 @@ class NotificationPermission {
         alertController.addAction(cancelAction)
         alertController.addAction(okAction)
         
-        viewController?.present(alertController, animated: true, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.11, execute: {
+            viewController?.present(alertController, animated: true, completion: nil)
+        })
     }
     
     private static func gotoSettings() {

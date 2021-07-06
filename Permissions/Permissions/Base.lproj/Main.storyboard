@@ -16,13 +16,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JGM-XM-yW8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JGM-XM-yW8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CzZ-Bv-IpV"/>
+                            <constraint firstItem="JGM-XM-yW8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="anT-0H-p2H"/>
+                            <constraint firstAttribute="trailing" secondItem="JGM-XM-yW8" secondAttribute="trailing" id="pHM-fq-CDh"/>
+                            <constraint firstAttribute="bottom" secondItem="JGM-XM-yW8" secondAttribute="bottom" id="y7Q-6L-zWf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="JGM-XM-yW8" id="xsD-Ns-EFj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="93"/>
+        </scene>
+        <!--Biometric View Controller-->
+        <scene sceneID="Z77-Gj-MSg">
+            <objects>
+                <viewController storyboardIdentifier="BiometricViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MDC-Hw-t5K" customClass="BiometricViewController" customModule="Permissions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wQ7-yj-C5m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8L0-yg-zWM">
+                                <rect key="frame" x="12" y="403" width="390" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="tU6-2t-3TN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="biometricAction:" destination="MDC-Hw-t5K" eventType="touchUpInside" id="V3s-aj-fOM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uBQ-7R-wek"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8L0-yg-zWM" firstAttribute="leading" secondItem="uBQ-7R-wek" secondAttribute="leading" constant="12" id="9SK-rZ-Rw4"/>
+                            <constraint firstItem="8L0-yg-zWM" firstAttribute="centerX" secondItem="uBQ-7R-wek" secondAttribute="centerX" id="H6v-pA-fdL"/>
+                            <constraint firstItem="8L0-yg-zWM" firstAttribute="centerY" secondItem="uBQ-7R-wek" secondAttribute="centerY" id="yMS-2z-j0v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="biometricButton" destination="8L0-yg-zWM" id="DTA-Zo-J2I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BuC-DJ-217" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="92"/>
         </scene>
     </scenes>
     <resources>
